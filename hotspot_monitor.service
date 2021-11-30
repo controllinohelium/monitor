@@ -1,0 +1,9 @@
+[Unit]
+Description=Hotspot Monitor Service
+
+[Service]
+Type=simple
+ExecStart=/home/pi/monitor/monitor.sh
+
+[Install]
+WantedBy=multi-user.target
