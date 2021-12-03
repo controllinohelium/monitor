@@ -8,6 +8,7 @@ else
   echo "Dashboard offline, starting..."
   cd /home/pi/hotspot_diagnostics
   sudo pm2 start index.js
+  sudo pm2 save
 fi
 
 # Montior for Lora Pkt Fwd
