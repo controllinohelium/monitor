@@ -68,7 +68,7 @@ echo "MINER - STATUS 1 - Not running, attempting to restart..."
 fi
 
 # MONITOR C - CLEAR SPACE
-if [ "$(df -h /home/pi/miner_data/ | tail -1 | awk '{print $5}' | tr -d '%')" -ge 80 ]; then
+if [ "$(df -h /home/pi/miner_data/ | tail -1 | awk '{print $5}' | tr -d '%')" -ge 90 ]; then
     sudo rm -rf /home/pi/miner_data/*
     sudo /home/pi/gateway_addons/instasync.sh force
 fi
